@@ -1,0 +1,42 @@
+sing System;
+
+class VariableDemo
+{
+    // Declare a global (class-level) variable using camelCase with underscore
+    private static int _globalCounter; // Declaration only
+
+    static void Main()
+    {
+        // Initialize the global variable
+        _globalCounter = 10; // Assign initial value to global counter
+
+        // Declare a local variable using camelCase
+        int localCounter; // Declaration only
+
+        // Initialize the local variable
+        localCounter = 5; // Assign initial value to local counter
+
+  // Declare a local variable using camelCase
+        int localCounter; // Declaration only
+
+        // Initialize the local variable
+        localCounter = 5; // Assign initial value to local counter
+
+        // Declare and initialize another variable in one line
+        int totalCount = _globalCounter + localCounter; // Calculates total count
+
+        // Print the values before update
+        Console.WriteLine($"Global Counter: {_globalCounter}"); // Display global counter
+        Console.WriteLine($"Local Counter: {localCounter}");    // Display local counter
+        Console.WriteLine($"Total Count: {totalCount}");        // Display total count
+
+        // Update both counters
+        localCounter += 1; // Increment local counter by 1
+        _globalCounter += 1; // Increment global counter by 1
+
+        // Print the values after update
+        Console.WriteLine("After update:");                      // Message
+        Console.WriteLine($"Global Counter: {_globalCounter}");  // Display updated global counter
+        Console.WriteLine($"Local Counter: {localCounter}");     // Display updated local counter
+    }
+}
